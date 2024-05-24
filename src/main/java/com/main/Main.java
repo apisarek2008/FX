@@ -20,7 +20,7 @@ public class Main extends Application {
 		loadMainView(Window);
 	}
 
-	private void loadMainView(Stage Window) throws IOException {
+	public void loadMainView(Stage Window) throws IOException {
 		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MainController.fxml"));
 		StackPane stackPane = loader.load();
 		Scene scene = new Scene(stackPane, 600, 400);
@@ -28,7 +28,5 @@ public class Main extends Application {
 		Window.setTitle("Apka");
 		Window.show();
 	}
-
-	
 
 }
