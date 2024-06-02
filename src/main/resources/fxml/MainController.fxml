@@ -7,7 +7,7 @@
 
 <StackPane fx:id="mainStackID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MainController">
    <children>
-      <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <BorderPane fx:id="borderPaneID" prefHeight="200.0" prefWidth="200.0">
          <left>
             <Button fx:id="btnNext" mnemonicParsing="false" onAction="#actNext" text="Next" BorderPane.alignment="CENTER" />
          </left>

@@ -12,8 +12,10 @@ import javafx.scene.layout.StackPane;
 
 public class MainController {
 
+	
 	@FXML
 	private StackPane mainStackID;
+	
 
 	@FXML
 	private void actNext() {
@@ -30,21 +32,13 @@ public class MainController {
 		mainStackID.getChildren().add(pane);
 	}
 
-	private void initialize() {
-		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/MainController.fxml"));
-		StackPane stackPane = null;
-		try {
-			stackPane = loader.load();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		stackPane = loader.getController();
-		stackPane.getChildren().add(stackPane);
-	}
+	
 
-	public void setScreen(StackPane pane) {
+	public void setScreen(Pane pane) {
 		mainStackID.getChildren().clear();
 		mainStackID.getChildren().add(pane);
 
 	}
+
+	
 }
